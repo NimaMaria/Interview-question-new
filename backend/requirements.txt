@@ -1,0 +1,9 @@
+flask==3.0.3
+flask-cors==4.0.1
+python-dotenv==1.0.1
+groq
+httpx
+faiss-cpu
+sentence-transformers==3.0.1
+PyPDF2==3.0.1
+numpy==1.26.4
