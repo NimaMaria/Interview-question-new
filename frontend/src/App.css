@@ -154,15 +154,8 @@ body {
 
 .sessionsGrid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 14px;
+  gap: 18px;
   margin-top: 12px;
-}
-
-@media (min-width: 820px) {
-  .sessionsGrid {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 .sessionCard {
@@ -170,12 +163,15 @@ body {
   border-radius: 16px;
   padding: 14px;
   background: #ffffff;
+  width: 100%;
 }
 
 .sessionTitle {
   margin: 0 0 10px;
   font-size: 16px;
   font-weight: 800;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--blue);
 }
 
 .diffBlock { margin-bottom: 12px; }
