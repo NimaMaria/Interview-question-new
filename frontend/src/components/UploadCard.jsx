@@ -12,7 +12,7 @@ export default function UploadCard({ file, onPickFile, onGenerate, loading, erro
           if (e.key === "Enter" || e.key === " ") onPickFile();
         }}
       >
-        <div className="uploadIcon" aria-hidden="true">☁️</div>
+
 
         <h2 className="uploadTitle">Upload Your Resume</h2>
         <p className="uploadHint">Drag and drop your PDF file here, or click to browse</p>
@@ -42,7 +42,7 @@ export default function UploadCard({ file, onPickFile, onGenerate, loading, erro
         onClick={onGenerate}
         disabled={loading || !file}
       >
-        {loading ? "Generating..." : "⚡ Generate Interview Questions"}
+        {loading ? "Generating..." : "Generate Interview Questions"}
       </button>
 
       {loading ? <div className="spinner" /> : null}

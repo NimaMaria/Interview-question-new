@@ -16,8 +16,8 @@ else:
     print("Key is None")
 
 app = Flask(__name__)
-# Allow only frontend on localhost:5173
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:5173"}})
+# Allow any origin for local dev
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 @app.route('/api/health', methods=['GET'])
 def health():
@@ -59,4 +59,4 @@ def generate_questions():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=5001)

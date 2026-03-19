@@ -5,8 +5,8 @@
   --muted: #667085;
   --border: rgba(15, 23, 42, 0.08);
   --shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
-  --blue: #3b82f6;
-  --blueDark: #2563eb;
+  --blue: #2563eb;
+  --blueDark: #1d4ed8;
 }
 
 * { box-sizing: border-box; }
@@ -117,6 +117,11 @@ body {
 }
 
 .btnPrimary:hover { background: var(--blueDark); }
+
+.btnPrimary:disabled { 
+  background: var(--blue); 
+  opacity: 0.65;
+}
 
 .error {
   margin-top: 12px;
