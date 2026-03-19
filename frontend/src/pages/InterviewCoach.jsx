@@ -47,9 +47,9 @@ export default function InterviewCoach() {
   return (
     <div className="page">
       <header className="hero">
-        <h1 className="heroTitle">Generate Interview Questions in Seconds</h1>
+        <h1 className="heroTitle" style={{ color: "var(--blue)" }}>Generate Interview Questions</h1>
         <p className="heroSub">
-          Upload your resume to get tailored interview questions based on your profile and target role.
+          Upload your resume to get tailored interview questions based on your profile
         </p>
       </header>
 
@@ -69,7 +69,7 @@ export default function InterviewCoach() {
         error={error}
       />
 
-      <GeneratedQuestions results={results} />
+      <GeneratedQuestions results={results} file={file} />
     </div>
   );
 }
